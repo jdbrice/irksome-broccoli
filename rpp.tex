@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 
 
-\title{ Nuclear Modification Factor in Au+Au Collisions at $\sqrt{s_{NN}}=14.5$ GeV at STAR }
+\title{ Nuclear Modification Factor for Identified Pions, Kaons, and Protons in Au+Au Collisions at $\sqrt{s_{NN}}=14.5$ GeV at STAR }
 
 \author{
         James Daniel Brandenburg \\
@@ -17,6 +17,17 @@
 \usepackage{caption} 
 \usepackage{subcaption}
 \usepackage{listings}
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 
 
@@ -29,7 +40,12 @@
 	\clearpage
 
 	\include{intro}
+	\include{experimental}
+	\include{analysis}
+	\include{future}
 	
-
+	\clearpage
+	\bibliography{zotero_masters_rpp}{}
+	\bibliographystyle{auth}
 
 \end{document}
