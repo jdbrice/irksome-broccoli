@@ -31,6 +31,7 @@ ENTRY
     type
     volume
     year
+    url
   }
   {}
   { label }

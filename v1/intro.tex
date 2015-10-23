@@ -1,0 +1,39 @@
+\section{Introduction}
+
+	\subsection{Quark-Gluon Plasma}
+	\label{sec:qgp}
+	In 1977 Bohr, Henrik, and Nielsen predicted that the characteristics of QCD should lead to a deconfined state of QCD matter at high temperatures and densities\cite{bohr_hadron_1977}.  Lattice QCD calculations have since predicted a crossover phase transition from \textit{normal} hadronic matter to a deconfined QCD state at a critical temperature of $\sim$175 MeV ($\sim10^{12}$ Kelvin!)\cite{karsch_phase_1995}. This deconfined state of QCD matter, often called Quark-Gluon Plasma (QGP), has been a primary interest to the high energy nuclear physics community since its prediction. 
+
+	For this reason, several special purpose experiments have been built to explore the creation, evolution and characteristics of QCD matter in extreme conditions. The most notable of these are the Relativistic Heavy Ion Collider (RHIC) located at Brookhaven National Laboratory (BNL) in Long Island, New York and the Large Hadron Collider (LHC) in Geneva, Switzerland. Initial results from RHIC strongly suggest the existence of a QGP-like phase of matter. However, these experimental results suggest that the created matter behaved more like a strongly interacting liquid than a non-interacting gas of quarks and gluons as originally expected\cite{bohr_hadron_1977}. These early results have spurred a strong interest in precisely characterizing the medium produced in HICs at significantly high temperatures. 
+
+	\subsection{Heavy Ion Collisions}
+	\label{sec:hic}
+	Heavy ion collisions (HICs) are a useful experimental tool for creating short-lived systems of high density and temperature. HICs are characterized by the nucleon-nucleon center-of-mass energy \snn (the square root of the Mandlestam variable $s$ for the nucleon pair) and the species of colliding nuclei. The nuclei species are often abbreviated. For instance, \auau refers to gold on gold collisions, Cu$+$Au refers to copper on gold collisions, and pp refers to proton on proton collisions. Heavy ion colliders like RHIC produce HICs by accelerating clouds of ionized atoms in opposite directions. These two beams of ions are then steered towards one another to cause a collision. Due to the low density of these clouds, at most one pair of ions will collide in any given crossing. 
+
+	For the purposes of this paper we will refer to an \textit{event} as a single collision between a pair of nuclei. It is important to note that every event will have different initial conditions, such as the impact parameter ($b$) between the two nuclei, the distribution of nucleons within the nuclei, and the amount of momenta transfered during the collision. Some of these initial conditions and their effect on experimental observables will be discussed in more detail in Section \ref{sec:mc_glauber}. 
+
+
+\section{Solenoidal Tracker at RHIC}
+	\label{sec:star}
+	The Solenoidal Tracker At RHIC (STAR) is one of several experimental apparatus at BNL used for studying the systems produced in HICs. The STAR detector consists of several sub-detectors that each perform a specialized function. Only two of the sub-detectors are important for the work being presented: the Time Projection Chamber (TPC) and the Time Of Flight (TOF) system. 
+
+	\subsection{ Time Projection Chamber }
+		The TPC is the primary detector in STAR. It provides charged particle tracking as well as momentum and specific ionization energy loss (dE/dx) measurement. A schematic diagram of its structure is shown in Figure \ref{fig:tpcman}. It is a metal cylinder 400 cm in diameter and 420 cm long. The central membrane, the cathode, is at a potential difference of 28 kV with respect to the anodes at either end. The chamber is filled with P10 gas, a mixture of $\sim$10\% methane and $\sim$90\% argon\cite{anderson_star_2003}. 
+
+		\begin{figure}
+			\centering 
+			\includegraphics[width=0.8\textwidth]{tpcman.pdf} 
+			 
+			\caption{ \label{fig:tpcman} A schematic diagram of STAR's primary tracking detector, the Time Projection Chamber. The central membrane is at a potential difference of 28 kV with respect to the anodes at either end. The volume between the inner and outer field cages is filled with P10 gas, a mixture of $\sim$10\% methane and $\sim$90\% argon\cite{anderson_star_2003}. } 
+		\end{figure}
+
+		Charged particles passing through the TPC's gas cause the gas to become ionized along the particle's trajectory. The potential difference between the anodes and the cathode causes the charge to drift towards pick-up pads on either sides of the TPC. Read-out electronics then record the location of the charge and the time of arrival. This data is used by specialized software to reconstruct the particle trajectory, momentum, and dE/dx.
+
+	\subsection{ Time of Flight System }
+		The purpose of the STAR Time Of Flight system is to provide precise timing of particle trajectories. The TOF is essentially a specialized stopwatch used to measure the precise amount of time particles take to traverse the detector. The full TOF system consists of the vertex position detector (VPD) and the barrel TOF detector.
+
+		The VPD is dedicated sub-detector designed to provide precise event-by-event start-time measurements. The VPD is a set of two detector assemblies on either side of the interaction point along the beam-line. Each detector assembly consists of 19 photomultiplier tubes capable of detecting charged particles that are minimally deflected in the plane transverse to the beam-line. The coincidence between the two detectors along with the precise signal timing is used to estimate the start-time of the initial heavy ion interaction down to resolutions of about $\sim$25 picoseconds in gold on gold collisions at RHIC top energies\cite{llope_star_2014}.
+
+		The barrel TOF detector is a cylindrical structure composed of 120 trays that sit just outside the TPC's outer diameter. Each of these trays are a collection of multi-gap resistive plate chambers (MRPC) capable of recording the precise timing of charged particle hits. The use of MRPC as opposed to more conventional single-gap resistive plate chambers is crucial in achieving time resolutions of less than 100 picoseconds. The start-time, trajectory from the TPC, and the track's stop-time from the barrel TOF detector can be combined to provide precise measurements of each particle's velocity. For data collected below $\sqrt{s_{NN}} \approx $ 39 GeV the VPD is very inefficient and the barrel TOF system is used for both the event start-time and the track-by-track stop-time measurements. 
+
+		I have been very active in the maintenance and support of the TOF system since joining Dr. Geurt's research group. The student setup the VPD hardware in January 2015 for use in that year. I have also been responsible for performing the electronics calibrations needed to achieve the nominal time resolution for data-taking runs since 2013.

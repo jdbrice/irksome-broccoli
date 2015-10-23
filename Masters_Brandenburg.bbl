@@ -1,4 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bohr_hadron_1977}
+{Henrik} Bohr and {H}.~{B}. {Nielsen}.
+\newblock Hadron production from a boiling quark soup: {A} thermodynamical
+  quark model predicting particle ratios in hadronic collisions.
+\newblock {\em Nuclear {Physics} {B}}, 128(2):275--293, September 1977.
+
+\bibitem{karsch_phase_1995}
+{Frithjof} Karsch.
+\newblock The {Phase} {Transition} to the {Quark} {Gluon} {Plasma}: {Recent}
+  {Results} from {Lattice} {Calculations}.
+\newblock {\em Nuclear {Physics} {A}}, 590(1-2):367--381, July 1995.
 
 \bibitem{anderson_star_2003}
 {M}. Anderson, {J}. {Berkovitz}, {W}. {Betts}, et~al.
@@ -14,5 +26,74 @@
 \newblock {\em Nuclear {Instruments} and {Methods} in {Physics} {Research}
   {Section} {A}: {Accelerators}, {Spectrometers}, {Detectors} and {Associated}
   {Equipment}}, 759:23--28, September 2014.
+
+\bibitem{miller_glauber_2007}
+{Michael}~{L}. Miller, {Klaus} {Reygers}, {Stephen}~{J}. {Sanders}, and {Peter}
+  {Steinberg}.
+\newblock Glauber {Modeling} in {High} {Energy} {Nuclear} {Collisions}.
+\newblock {\em Annual {Review} of {Nuclear} and {Particle} {Science}},
+  57(1):205--243, November 2007.
+
+\bibitem{j.bystricky_energy_1987}
+{P}. {La}~{France} {J}.~{Bystricky}.
+\newblock Energy dependence of nucleon-nucleon inelastic total cross-sections.
+\newblock {\em http://dx.doi.org/10.1051/jphys:0198700480110190100}, 48(11),
+  1987.
+
+\bibitem{bicudo_chiral_2011}
+{Pedro} Bicudo, {Nuno} {Cardoso}, and {Marco} {Cardoso}.
+\newblock The {Chiral} crossover, static-light and light-light meson spectra,
+  and the deconfinement crossover.
+\newblock {\em {PoS}}, {BORMIO2011}:062, 2011.
+
+\bibitem{fialkowski_high_1973}
+{K}. Fia{\l}kowski and {H}.~{I}. {Miettinen}.
+\newblock High energy multiplicity distributions and the two-component picture
+  of particle production.
+\newblock {\em Physics {Letters} {B}}, 43(1):61--64, January 1973.
+
+\bibitem{brandenburg_auau}
+{James} Brandenburg.
+\newblock {Au+Au} at sqrt(s\_{NN})=14.5 {GeV} {RefMultCorr} and {Centrality}
+  {Definitions}.
+
+\bibitem{brun_geant3_1987}
+{R}. Brun, {F}. {Bruyant}, {M}. {Maire}, {A}.~{C}. {McPherson}, and {P}.
+  {Zanarini}.
+\newblock {GEANT3}.
+\newblock 1987.
+
+\bibitem{starcollaboration_transversemomentum_2003}
+{STAR Collaboration}, {J}. {Adams}, {C}. {Adler}, et~al.
+\newblock Transverse-{Momentum} and {Collision}-{Energy} {Dependence} of
+  {High}-{\textdollar}\{p\}\_\{T\}{\textdollar} {Hadron} {Suppression} in
+  {\textdollar}\ensuremath{\backslash}mathrm\{A\}\ensuremath{\backslash}mathrm\{u\}+\ensuremath{\backslash}mathrm\{A\}\ensuremath{\backslash}mathrm\{u\}{\textdollar}
+  {Collisions} at {Ultrarelativistic} {Energies}.
+\newblock {\em Physical {Review} {Letters}}, 91(17):172302, October 2003.
+
+\bibitem{gale_intermediate_2007}
+{Charles} Gale and {Simon} {Turbide}.
+\newblock Intermediate mass dileptons in relativistic nuclear collisions.
+\newblock {\em Nuclear {Physics} {A}}, 783(1-4):351--358, February 2007.
+
+\bibitem{yang_calibration_2014}
+{C}. Yang, {X}.~{J}. {Huang}, {C}.~{M}. {Du}, et~al.
+\newblock Calibration and performance of the {STAR} {Muon} {Telescope}
+  {Detector} using cosmic rays.
+\newblock {\em Nuclear {Instruments} and {Methods} in {Physics} {Research}
+  {Section} {A}: {Accelerators}, {Spectrometers}, {Detectors} and {Associated}
+  {Equipment}}, 762:1--6, October 2014.
+
+\bibitem{schambach_star_2014}
+{Joachim} Schambach, {Eric} {Anderssen}, {Giacomo} {Contin}, et~al.
+\newblock The {STAR} {Heavy} {Flavor} {Tracker} ({HFT}).
+\newblock pages 659--664, September 2014.
+
+\bibitem{brandenburg_identified}
+{James} Brandenburg.
+\newblock Identified light and strange hadron spectra at
+  {\textdollar}\ensuremath{\backslash}sqrt\{\vphantom{\}}s\_\{NN\}\vphantom{\{}\}=14.5{\textdollar}{\textasciitilde}{GeV}
+  and systematic study of baryon/meson effect at intermediate transverse
+  momentum with {STAR} at {RHIC} {BES} {I}.
 
 \end{thebibliography}

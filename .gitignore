@@ -5,3 +5,7 @@
 *.pdf
 *.gz
 *.toc
+*.out
+*.png
+
+figure/

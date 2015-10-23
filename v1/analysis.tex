@@ -1,0 +1,115 @@
+\section{Analysis of \texorpdfstring{\auau}{AuAu} Collisions at \texorpdfstring{\snn}{sqrt(sNN)}=14.5 GeV }
+\label{sec:analysis}
+	\subsection{RHIC Beam Energy Scan Phase I }
+	\label{sec:besi}
+	The Beam Energy Scan phase I (BES I) at RHIC was a program designed to scan the temperature versus baryon chemical potential ($\mu_B$) QCD phase diagram (See Fig. \ref{fig:qcd_phase_diagram}) by collecting data from \auau collisions at \snn energies ranging from 7.7 GeV to 39.0 GeV. The BES I program was designed with three goals in mind: 1) to search for the turn-off of observational signatures attributed to the formation of QGP, 2) to search for a first order phase transition at finite baryon chemical potential, and 3) to search for a conjectured critical point. The work presented in this paper is primarily focused on the search for the turn-off of QGP signatures. The following work is a study of the \auau data collected at \snn = 14.5 GeV during the final BES I data-taking run in 2014. In the following sections the procedure used to measure the identified particle yields (spectra) as a function of the momentum transverse to the beam (\pt) and some of the observables that can be formed from them will be discussed.
+
+	\begin{figure}
+		\centering 
+		\includegraphics[width=\textwidth]{bes_phase_diagram.pdf} 
+		
+		\caption{ \label{fig:qcd_phase_diagram}  A schematic of the temperature vs. baryon chemical potential phase diagram showing the conjectured critical point and first order phase transition from \textit{normal} hadronic matter into QGP\cite{bicudo_chiral_2011}. The leftmost dashed line (magenta) shows the approximate phase space trajectory for systems produced at the LHC from Pb+Pb collisions at \snn = 2.76 TeV. All other dashed lines represent approximate phase space trajectories for systems produced at RHIC for various \snn energies. The large arrows show which energies belong to which of the RHIC programs. BES I (see Section \ref{sec:besi}) was completed in 2014, while BES II and the fixed target program are scheduled for 2019 - 2020. } 
+	\end{figure}
+
+
+	\subsection{Event Classification}
+	\label{sec:mc_glauber}
+
+	As discussed in Section \ref{sec:hic}, every HIC event has different and experimentally unknown initial conditions. Several initial geometric quantities such as the impact parameter $b$, the number of participating nucleons $N_{part}$ (equal to 2 for a pp collision), and the number of binary collisions between nucleons $N_{coll}$ (equal to 1 for a pp collision) are of particular interest. The Glauber model, developed by Roy Glauber, is commonly used in heavy ion physics to compute initial state geometric quantities and statistically relate them to direct experimental observables\cite{miller_glauber_2007}. 
+
+	The first step in implementing the Monte Carlo (MC) Glauber method is to geometrically construct the two colliding nuclei. The nuclei are constructed by sampling the appropriate number of nucleons (197 for gold, 208 for lead) from a Woods-Saxon density profile. The nucleon positions are sampled independently for each nucleon and each event to simulate the effect of fluctuations in nuclei structure. After the nuclei have been constructed their collision is simulated by treating each nucleon like a hard sphere of radius r = $\sqrt{\sigma^{NN}_{inel}/\pi}/2$, where $\sigma^{NN}_{inel}$ is the inelastic nucleon-nucleon cross section for the \snn energy of interest\cite{j.bystricky_energy_1987}. 
+
+	Using this technique we can compute $N_{part}$, $N_{coll}$ and other geometric quantities of interest as a function of the impact parameter. $N_{part}$ and $N_{coll}$ are important at this stage because they are related to the number of charged particles ($N_{ch}$) in a given event through the two-component multiplicity model\cite{fialkowski_high_1973}. The $\chi^2$ is minimized between the data and MC Glauber $N_{ch}$ distributions to determine the optimal Glauber parameters. Finally this mapping between $N_{ch}$ and impact parameter is used to classify events by their `percent most central' (see Fig. \ref{fig:centrality}). I conducted the study outlined above for the 2014 \auau data at \snn = 14.5 GeV and produced standardized event classifications for use by the entire STAR collaboration \cite{brandenburg_auau}.
+
+	\begin{figure}
+		\centering 
+		\begin{subfigure}[b]{\textwidth} 
+			\includegraphics[width=\textwidth]{glauber_mc_event.pdf}
+		\end{subfigure}
+		\begin{subfigure}[b]{\textwidth} 
+			\centering
+			\vspace{-3cm}
+			\includegraphics[width=0.8\textwidth]{cocktail3.pdf} 
+		\end{subfigure}
+		\centering
+		\caption{ \label{fig:centrality} An example of the correlation of the experimentally observed $N_{ch}$ and the geometric quantities $b$, $N_{part}$, and collision centrality calculated from MC Glauber\cite{miller_glauber_2007}. The y-axis is in arbitrary units (a.u.). $|\eta| < 1$ corresponds to the geometric acceptance region of the STAR TPC.  } 
+	\end{figure} 
+
+	\subsection{Particle Identification}
+	\label{sec:pid}
+	As mentioned in Section \ref{sec:star}, the TPC and TOF detectors are used in this analysis to identify particle species. The TPC provides dE/dx  and the TOF provides 1/$\beta$ as seen in Fig. \ref{fig:typical_pid}. These quantities depend on the particle mass dE/dx $\propto (z^2/\beta^2) \ln(\beta \gamma)$ and 1/$\beta \propto (m_0 \gamma) / p $ and are therefore useful for separating particle species. 
+
+	\begin{figure}
+		\centering 
+		\begin{subfigure}[b]{0.49\textwidth} 
+			\includegraphics[width=\textwidth]{typical_dedx.pdf} 
+			\label{fig:typical_dEdx} 
+		\end{subfigure} 
+		\begin{subfigure}[b]{0.49\textwidth} 
+			\includegraphics[width=\textwidth]{typical_onebeta.pdf} 
+			\label{fig:typical_onebeta} 
+		\end{subfigure}
+		\caption{ \label{fig:typical_pid} The measured ln(dE/dx) versus $p_T \times $charge from the TPC (left). The measured velocity expressed at 1/$\beta$ versus $p_T \times$charge from the TOF (right). The bands correspond to particles of different masses. } 
+	\end{figure}
+
+	In this analysis I developed a novel method of combining these two observables to maximize the separation power and stability of the yield extraction. For this procedure the measured dE/dx and 1/$\beta$ are first re-weighted to account for poor detector calibrations, finite bin-width effects, momentum resolution effects, and for normalization. The measured values are transformed using :
+	\begin{equation}
+		z^{\prime} = \Sigma_{s} \left[ w_{s}(z) \times \left( z + \mu^{s}(\langle p \rangle ) - \mu^{s}(p) \right) \right] - \mu^{h}(\langle p \rangle)
+	\end{equation}
+
+	where $h$ is the species that should be centered at $z^{\prime} = 0$, $s$ is the species index ( e.g. $\pi$, K, p ), $w_{s}$ is a weight given to each species as a function of the measurement, $p$ is the track momentum in GeV/c, $\langle p \rangle$ is the average momentum in the given \pt (momentum in the plane transverse to the beam-line) and $y$ (a measure of the particle's velocity in the direction of the beam-line) range, $\mu^{s}(p)$ is the theoretical mean for the measurement at the given momentum value, and $z$ is the measured value, either dE/dx or 1/$\beta$. These two variables are then used simultaneously in a $\chi^2$ minimization fit to extract exclusive particle yields as a function of \pt. An example of the simultaneous fitting is shown in Fig. \ref{fig:fitting}.
+
+	\begin{figure}
+		\centering 
+		\begin{subfigure}[b]{0.49\textwidth} 
+			\includegraphics[width=\textwidth]{fitting_zb.pdf}  
+		\end{subfigure} 
+		\begin{subfigure}[b]{0.49\textwidth} 
+			\includegraphics[width=\textwidth]{fitting_zd.pdf} 
+		\end{subfigure}
+
+		\caption{ \label{fig:fitting} The result of simultaneously fitting $z^{\prime}_{\beta^{-1}}$ and $z^{\prime}_{dE/dx}$ to extract particle yields for $\pi$(red), K(blue), and p(green). The fits in the $z^{\prime}_{\beta^{-1}}$ projection are shown in the left panel while the fit results in the $z^{\prime}_{dE/dx}$ projection are shown in the right panel. The grey boxes show the active region used in the fitting procedure. }  
+	\end{figure}
+
+	Comparison between multiple experiments and results from theories requires that the measured particle yields be corrected for the acceptance and response effects of the detectors used in the measurement. For instance, some of the tracks that pass through the TPC are never reconstructed by the software into a usable particle track. Additionally, some tracks are reconstructed by the TPC but do not produce a signal in the TOF system. These effects were estimated and corrected for using STARSim, an application of the widely used GEometry ANd Tracking (GEANT\cite{brun_geant3_1987}) library used to simulate the passage of charged particles through matter.
+
+	\subsection{Identified Particle Spectra}
+
+	The primary result of the procedure outlined in Section \ref{sec:pid} is the exclusive spectra for the $\pi^+$, $\pi^-$, $p$, and $\bar{p}$. Spectra were computed for several centrality ranges for each particle species in the $-0.25 \leq y \leq 0.25$ range. The spectra shown in Fig. \ref{fig:spectra} are plotted with horizontal bars representative of the \pt range used for measuring each point in the spectra. Vertical bars are used to show statistical uncertainty while shaded boxes are used to show systematic uncertainties, e.g. those resulting from uncertainties in input parameters, the procedure used, etc. The same convention is used for following results in Fig. \ref{fig:rcp} as well. Physical information about the system can be extracted from the spectra by fitting to various model predictions. I plan to compare the fit result of various models in the near future.
+
+	The spectra are also useful for constructing various other experimental observables. One observable of particular interest will be discussed in the following section.
+
+	\begin{sidewaysfigure}[ht]
+		\centering 
+		\includegraphics[width=\textwidth]{spectra_all.png} 
+
+		\centering
+		\caption{ \label{fig:spectra} The normalized and corrected exclusive particle yields in the rapidity range $-0.25 \leq y \leq 0.25 $ for positive pions (top left), negative pions (bottom left), protons (top right), and anti-protons (bottom right). The spectra for each centrality is shown in a different color and scaled by successive factors of 10 for viewing purposes. Horizontal bars represent the \pt range used for measuring each point in the spectra. Vertical bars are used to show statistical uncertainty while shaded boxes are used to show systematic uncertainties, ie those resulting from uncertainties in input parameters, the procedure used, etc. } 
+	\end{sidewaysfigure}
+
+	\subsection{Nuclear Modification Factor}
+	\label{sec:rcp}
+	The nuclear modification factor \raa is the ratio of particle production in HICs to the appropriately scaled particle production of pp collisions. If a heavy ion collision were simply a superposition of pp collisions then the \raa would be equal to 1.0. However, if there were a net enhancement or suppression of particle production in HICs compared to pp collisions then the \raa would be above or below 1.0, respectively. When pp reference data is not available, the nuclear modification factor can be measured using the modified ratio, \rcp. The \rcp is a proxy to the \raa measurement and is defined as:
+
+	\begin{equation}
+		R_{CP} = \frac{d^2 N_{P} / dp_{T}dy}{\langle N_{coll} \rangle_{P}} 
+				\Big/ \frac{d^2 N_{C} / dp_{T}dy}{\langle N_{coll} \rangle_{C}}
+		\label{eq:r_cp}
+	\end{equation}
+
+	\noindent
+	where $C$ refers to events in which the ions collided with a small $b$ (ie more central), $P$ refers to events in which the ions collided with a larger $b$ (ie more peripheral), $\langle N_{coll} \rangle $ is the average number of binary nucleon-nucleon collisions calculated with MC Glauber (see Section \ref{sec:mc_glauber}), and $dN^2/dp_T dy$ is the particle yield measured as a function of the \pt and the rapidity $y$. This ratio can be understood as the ratio of invariant yields in different centrality ranges scaled by the average number of binary collisions in their respective centrality ranges.
+
+	The \rcp has been previously measured at STAR in \auau collisions at \snn=200 GeV. At this energy the \rcp was found to be significantly less than 1.0 for \pt $\gtrsim$4.0 GeV/c \cite{starcollaboration_transversemomentum_2003}. This suppression of particle production at high \pt has been attributed to the loss of energy of particles traveling through and interacting with a strongly interacting medium of quarks and gluons. The purpose of measuring this observable at \snn=14.5 GeV is to determine if this signature, attributed to the formation of QGP at higher \snn energies, turns-off with decreasing \snn energy.
+
+	\begin{sidewaysfigure}[ht]
+		\centering 
+		\includegraphics[width=\textwidth]{rcp_all.png} 
+
+		\centering
+		\caption{ \label{fig:rcp} The \rcp for \auau at \snn =14.5 GeV for events with a centrality of (C=)0-5\% over those with (P=)60-80\%\cite{brandenburg_identified}. The large (red) error bar on the right hand side of each plot corresponds to the correlated uncertainty due to the MC Glauber calculation of $N_{coll}$ (See Section \ref{sec:mc_glauber}. } 
+	\end{sidewaysfigure}
+
+	The \rcp calculated from the \auau at \snn = 14.5 GeV spectra can be seen in Fig. \ref{fig:rcp} where events with a centrality of 0-5\% and 60-80\% are used for $central$ and $peripheral$ respectively. The \rcp of $p$ and $\bar{p}$ are both significantly above unity for \pt $\gtrsim$ 2.0 GeV/c. The strong suppression of $\bar{p}$ at low \pt can be attributed to the effects baryon stopping at this \snn energy. The \rcp of the $\pi^{+}$ and $\pi^{-}$ is below unity for \pt $\lesssim$ 2.0 GeV/c and consistent with unity above that. There is no conclusive suppression signature observed since the \rcp for all 4 of these species show a value greater than or equal to unity at the highest \pt values. 
+
+	It is important to note that competing effects exist besides energy loss in a medium. However, these other effects are expected to increase the value of \rcp. For this reason an \rcp less than 1.0 is interpreted as a signature of the presence of a QGP-like medium, however, an \rcp greater than or equal to 1.0 does not necessarily suggest that no QGP was formed. Therefore, the \rcp result obtained at \snn=14.5 GeV should be interpreted as evidence that effects of a QGP-like medium are less significant compared to what is observed at higher \snn energies but should not be taken as conclusive evidence that no QGP is formed at this energy.

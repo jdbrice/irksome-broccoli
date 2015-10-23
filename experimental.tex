@@ -1,15 +1,25 @@
 \section{The Solenoidal Tracker at RHIC}
-The Solenoidal Tracker At RHIC (STAR) is one of several experimental apparatus at BNL used for studying the systems produced in heavy ion collisions. The STAR detector, shown in Figure \ref{fig:star}, consists of several sub-detectors that each perform a specialized function. Only three of the detectors are important for the work being presented: the Time Projection Chamber (TPC), the barrel Time Of Flight detector and the Vertex Position Detector (VPD). 
+\label{sec:star}
+The Solenoidal Tracker At RHIC (STAR) is one of several experimental apparatus at BNL used for studying the systems produced in heavy ion collisions. The STAR detector consists of several sub-detectors that each perform a specialized function. Only two of the sub-detectors are important for the work being presented: the Time Projection Chamber (TPC) and the Time Of Flight (TOF) system. 
 
 \subsection{ Time Projection Chamber }
-The TPC is the primary detector in STAR. It provides charged particle tracking as well as momentum and specific ionization energy loss (dE/dx) measurement. A schematic diagram of it's structure is shown in Figure \ref{fig:TPC}. It is a metal cylinder 400 cm in diameter and 420 cm long. The central membrane, the cathode, is at 28 kV with respect to the anodes at either end. The chamber is filled with P10 gas, a mixture of $\sim$10\% methane and $\sim$90\% argon\cite{anderson_star_2003}. 
+The TPC is the primary detector in STAR. It provides charged particle tracking as well as momentum and specific ionization energy loss (dE/dx) measurement. A schematic diagram of it's structure is shown in Figure \ref{fig:tpcman}. It is a metal cylinder 400 cm in diameter and 420 cm long. The central membrane, the cathode, is at a potential difference of 28 kV with respect to the anodes at either end. The chamber is filled with P10 gas, a mixture of $\sim$10\% methane and $\sim$90\% argon\cite{anderson_star_2003}. 
 
-Charged particles passing through the TPC's gas cause the gas to become ionized along the particle's trajectory. The potential difference between the anodes and the cathode causes the charge to drift towards pick-up pads on either sides of the TPC. Read-out electronics then record the location of the charge and the time of their arrival. This data is used by specialized software to reconstruct the particle trajectory, momentum and dE/dx.
+	\begin{figure}
+		\centering 
+		\includegraphics[width=0.8\textwidth]{tpcman.pdf} 
+		 
+		\caption{ \label{fig:tpcman} A schematic diagram of STAR's TPC\cite{anderson_star_2003}. } 
+	\end{figure}
+
+Charged particles passing through the TPC's gas cause the gas to become ionized along the particle's trajectory. The potential difference between the anodes and the cathode causes the charge to drift towards pick-up pads on either sides of the TPC. Read-out electronics then record the location of the charge and the time of their arrival. This data is used by specialized software to reconstruct the particle trajectory, momentum, and dE/dx.
 
 
 \subsection{ Time of Flight System }
-The purpose of the STAR Time Of Flight (TOF) system is to provide precise timing of particle trajectories. The TOF system is essentially a specialized stopwatch with dedicated components for measuring the start-time and stop-time of particle trajectories.
+The purpose of the STAR Time Of Flight system is to provide precise timing of particle trajectories. The TOF is essentially a specialized stopwatch used to measure the precise amount of time particles take to traverse the detector. The full TOF system consists of the VPD and the barrel TOF detector.
 
 The VPD is dedicated to providing precise event-by-event start-time measurements. The VPD is a set of two detectors on either side of the interaction point (one one the east and one one the west) along the beam-line. Each detector assembly consists of 19 photomultiplier tubes capable of detecting charged particles that are minimally deflected in the plane transverse to the beam-line. The coincidence between the two detectors along with the precise signal timing is used to estimate the start-time of the initial heavy ion interaction to a resolution of $\sim$85 picoseconds in gold on gold collisions at RHIC top energies\cite{llope_star_2014}.
 
-The student has been active in the maintenance and support of the TOF system since joining Rice University. The student setup the VPD in January 2015 for use the following year. The student has also been responsible for performing the electronics and software calibrations needed to achieve the expected time resolution for data-taking runs since 2013.
+The barrel TOF detector is a cylinder structure composed of 120 trays that sit just outside the TPC's outer diameter. Each of these trays are a collection of Multi-gap Resistive Plate Chambers (MRPC) capable of recording the precise timing of charged particle hits. The start-time, trajectory from the TPC, and the track's stop-time from the barrel TOF detector can be combined to provide precise measurements of each particle's velocity. For data collected below $\sqrt{s_{NN}} \approx $ 39 GeV the VPD is not used and the barrel TOF system is used for both the event start-time and the track-by-track stop-time measurements.
+
+The student has been very active in the maintenance and support of the TOF system since joining Dr. Geurt's research group. The student setup the VPD in January 2015 for use in the following year. The student has also been responsible for performing the electronics calibrations needed to achieve the nominal time resolution for data-taking runs since 2013.

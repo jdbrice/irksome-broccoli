@@ -1,7 +1,7 @@
 \documentclass[12pt]{article}
 
 
-\title{ Nuclear Modification Factor for Identified Pions, Kaons, and Protons in Au+Au Collisions at $\sqrt{s_{NN}}=14.5$ GeV at STAR }
+\title{ Study of the Identified $\pi^{+/-}$, K$^{+/-}$, $p$, and $\bar{p}$ Spectra in Au+Au Collisions at $\sqrt{s_{NN}}=14.5$ GeV at STAR }
 
 \author{
         James Daniel Brandenburg \\
@@ -11,14 +11,22 @@
 \date{\today}
 
 % Packages
+\usepackage{newclude}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage{graphicx}
-	\graphicspath{ {figure/event/}, {figure/track/}, {figure/energyLoss/}, {figure/mmtmRes/}, {figure/eff/}, {figure/feeddown/} }
+	\graphicspath{ {figure/} }
+\usepackage{rotating}
 \usepackage{caption} 
 \usepackage{subcaption}
 \usepackage{listings}
 \usepackage{setspace}
 \doublespacing
+
+\usepackage{float}
+
+% \usepackage{lineno}
+% \linenumbers
 
 \usepackage{hyperref}
 \hypersetup{
@@ -30,22 +38,38 @@
 }
 
 
+\newcommand*\snn{$\sqrt{s_{NN}}$ }
+\newcommand*\auau{Au$+$Au }
+\newcommand*\pt{$p_T$ }
+\newcommand*\rcp{$R_{CP}$ }
+\newcommand*\raa{$R_{AA}$ }
+
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.0in}
 
 \begin{document}
 	\maketitle
-	\addtolength{\topmargin}{-.875in}
+
 
 	\clearpage
 	\tableofcontents
 	\clearpage
 
-	\include{intro}
-	\include{experimental}
-	\include{analysis}
-	\include{future}
+	\include*{v1/intro}
+	\include*{v1/analysis}
+	\include*{v1/future}
+
+
+
+	% \include*{intro}
+	% \include*{experimental}
+	% \include*{analysis}
+	% \include*{future}
 	
 	\clearpage
-	\bibliography{zotero_masters_rpp}{}
+	\singlespacing
+	\footnotesize
+	\bibliography{Masters_RPP}
 	\bibliographystyle{auth}
 
 \end{document}
