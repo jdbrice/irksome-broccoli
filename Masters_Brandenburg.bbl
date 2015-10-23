@@ -20,12 +20,25 @@
   {Section} {A}: {Accelerators}, {Spectrometers}, {Detectors} and {Associated}
   {Equipment}}, 499(2-3):659--678, March 2003.
 
+\bibitem{llope_tofppvpd_2004}
+{W}.~{J}. Llope, {F}. {Geurts}, {J}.~{W}. {Mitchell}, et~al.
+\newblock The {TOFp}/{pVPD} {Time} of {Flight} {System} for {STAR}.
+\newblock {\em Nuclear {Instruments} and {Methods} in {Physics} {Research}
+  {Section} {A}: {Accelerators}, {Spectrometers}, {Detectors} and {Associated}
+  {Equipment}}, 522(3):252--273, April 2004.
+
 \bibitem{llope_star_2014}
 {W}.~{J}. Llope, {J}. {Zhou}, {T}. {Nussbaum}, et~al.
 \newblock The {STAR} {Vertex} {Position} {Detector}.
 \newblock {\em Nuclear {Instruments} and {Methods} in {Physics} {Research}
   {Section} {A}: {Accelerators}, {Spectrometers}, {Detectors} and {Associated}
   {Equipment}}, 759:23--28, September 2014.
+
+\bibitem{mohanty_exploring_2013}
+{Bedangadas} Mohanty.
+\newblock Exploring the {QCD} phase diagram through high energy nuclear
+  collisions: {An} overview.
+\newblock {\em {PoS}}, {CPOD2013}:001, 2013.
 
 \bibitem{miller_glauber_2007}
 {Michael}~{L}. Miller, {Klaus} {Reygers}, {Stephen}~{J}. {Sanders}, and {Peter}
@@ -40,22 +53,18 @@
 \newblock {\em http://dx.doi.org/10.1051/jphys:0198700480110190100}, 48(11),
   1987.
 
-\bibitem{bicudo_chiral_2011}
-{Pedro} Bicudo, {Nuno} {Cardoso}, and {Marco} {Cardoso}.
-\newblock The {Chiral} crossover, static-light and light-light meson spectra,
-  and the deconfinement crossover.
-\newblock {\em {PoS}}, {BORMIO2011}:062, 2011.
-
 \bibitem{fialkowski_high_1973}
 {K}. Fia{\l}kowski and {H}.~{I}. {Miettinen}.
 \newblock High energy multiplicity distributions and the two-component picture
   of particle production.
 \newblock {\em Physics {Letters} {B}}, 43(1):61--64, January 1973.
 
-\bibitem{brandenburg_auau}
+\bibitem{brandenburg_refmultcorr}
 {James} Brandenburg.
-\newblock {Au+Au} at sqrt(s\_{NN})=14.5 {GeV} {RefMultCorr} and {Centrality}
-  {Definitions}.
+\newblock {RefMultCorr} and {Centrality} {Definitions} for {Au+Au} at
+  sqrt(s\_{NN})=14.5 {GeV} for {STAR} {BES} {I}. Retrieved
+  from~\url{http://www.star.bnl.gov/protected/lfspectra/jdb/run14/AuAu15/RefMultCorr/www/index.html}~(\emph{on}
+  2015-10-23).
 
 \bibitem{brun_geant3_1987}
 {R}. Brun, {F}. {Bruyant}, {M}. {Maire}, {A}.~{C}. {McPherson}, and {P}.
@@ -70,6 +79,15 @@
   {\textdollar}\ensuremath{\backslash}mathrm\{A\}\ensuremath{\backslash}mathrm\{u\}+\ensuremath{\backslash}mathrm\{A\}\ensuremath{\backslash}mathrm\{u\}{\textdollar}
   {Collisions} at {Ultrarelativistic} {Energies}.
 \newblock {\em Physical {Review} {Letters}}, 91(17):172302, October 2003.
+
+\bibitem{brandenburg_identified}
+{James} Brandenburg.
+\newblock Identified light and strange hadron spectra at
+  {\textdollar}\ensuremath{\backslash}sqrt\{\vphantom{\}}s\_\{NN\}\vphantom{\{}\}=14.5{\textdollar}{\textasciitilde}{GeV}
+  and systematic study of baryon/meson effect at intermediate transverse
+  momentum with {STAR} at {RHIC} {BES} {I}. Retrieved
+  from~\url{http://indico.cern.ch/event/355454/session/7/contribution/606}~(\emph{on}
+  2015-10-23).
 
 \bibitem{gale_intermediate_2007}
 {Charles} Gale and {Simon} {Turbide}.
@@ -88,12 +106,5 @@
 {Joachim} Schambach, {Eric} {Anderssen}, {Giacomo} {Contin}, et~al.
 \newblock The {STAR} {Heavy} {Flavor} {Tracker} ({HFT}).
 \newblock pages 659--664, September 2014.
-
-\bibitem{brandenburg_identified}
-{James} Brandenburg.
-\newblock Identified light and strange hadron spectra at
-  {\textdollar}\ensuremath{\backslash}sqrt\{\vphantom{\}}s\_\{NN\}\vphantom{\{}\}=14.5{\textdollar}{\textasciitilde}{GeV}
-  and systematic study of baryon/meson effect at intermediate transverse
-  momentum with {STAR} at {RHIC} {BES} {I}.
 
 \end{thebibliography}

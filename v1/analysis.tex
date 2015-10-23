@@ -1,15 +1,15 @@
+\begin{figure}
+		\centering 
+		\includegraphics[width=\textwidth]{qcd_phase_blue.png} 
+		
+		\caption{ \label{fig:qcd_phase_diagram}  A schematic of the temperature vs. baryon chemical potential phase diagram showing the conjectured critical point and first order phase transition from \textit{normal} hadronic matter into QGP\cite{mohanty_exploring_2013}. The colored lines with arrows represent approximate phase space trajectories for systems produced at the LHC, RHIC and FAIR (a proposed future experiment) for various collision species and \snn energies. } 
+	\end{figure}
+
 \section{Analysis of \texorpdfstring{\auau}{AuAu} Collisions at \texorpdfstring{\snn}{sqrt(sNN)}=14.5 GeV }
 \label{sec:analysis}
 	\subsection{RHIC Beam Energy Scan Phase I }
 	\label{sec:besi}
 	The Beam Energy Scan phase I (BES I) at RHIC was a program designed to scan the temperature versus baryon chemical potential ($\mu_B$) QCD phase diagram (See Fig. \ref{fig:qcd_phase_diagram}) by collecting data from \auau collisions at \snn energies ranging from 7.7 GeV to 39.0 GeV. The BES I program was designed with three goals in mind: 1) to search for the turn-off of observational signatures attributed to the formation of QGP, 2) to search for a first order phase transition at finite baryon chemical potential, and 3) to search for a conjectured critical point. The work presented in this paper is primarily focused on the search for the turn-off of QGP signatures. The following work is a study of the \auau data collected at \snn = 14.5 GeV during the final BES I data-taking run in 2014. In the following sections the procedure used to measure the identified particle yields (spectra) as a function of the momentum transverse to the beam (\pt) and some of the observables that can be formed from them will be discussed.
-
-	\begin{figure}
-		\centering 
-		\includegraphics[width=\textwidth]{bes_phase_diagram.pdf} 
-		
-		\caption{ \label{fig:qcd_phase_diagram}  A schematic of the temperature vs. baryon chemical potential phase diagram showing the conjectured critical point and first order phase transition from \textit{normal} hadronic matter into QGP\cite{bicudo_chiral_2011}. The leftmost dashed line (magenta) shows the approximate phase space trajectory for systems produced at the LHC from Pb+Pb collisions at \snn = 2.76 TeV. All other dashed lines represent approximate phase space trajectories for systems produced at RHIC for various \snn energies. The large arrows show which energies belong to which of the RHIC programs. BES I (see Section \ref{sec:besi}) was completed in 2014, while BES II and the fixed target program are scheduled for 2019 - 2020. } 
-	\end{figure}
 
 
 	\subsection{Event Classification}
@@ -19,21 +19,19 @@
 
 	The first step in implementing the Monte Carlo (MC) Glauber method is to geometrically construct the two colliding nuclei. The nuclei are constructed by sampling the appropriate number of nucleons (197 for gold, 208 for lead) from a Woods-Saxon density profile. The nucleon positions are sampled independently for each nucleon and each event to simulate the effect of fluctuations in nuclei structure. After the nuclei have been constructed their collision is simulated by treating each nucleon like a hard sphere of radius r = $\sqrt{\sigma^{NN}_{inel}/\pi}/2$, where $\sigma^{NN}_{inel}$ is the inelastic nucleon-nucleon cross section for the \snn energy of interest\cite{j.bystricky_energy_1987}. 
 
-	Using this technique we can compute $N_{part}$, $N_{coll}$ and other geometric quantities of interest as a function of the impact parameter. $N_{part}$ and $N_{coll}$ are important at this stage because they are related to the number of charged particles ($N_{ch}$) in a given event through the two-component multiplicity model\cite{fialkowski_high_1973}. The $\chi^2$ is minimized between the data and MC Glauber $N_{ch}$ distributions to determine the optimal Glauber parameters. Finally this mapping between $N_{ch}$ and impact parameter is used to classify events by their `percent most central' (see Fig. \ref{fig:centrality}). I conducted the study outlined above for the 2014 \auau data at \snn = 14.5 GeV and produced standardized event classifications for use by the entire STAR collaboration \cite{brandenburg_auau}.
+	Using this technique we can compute $N_{part}$, $N_{coll}$ and other geometric quantities of interest as a function of the impact parameter. $N_{part}$ and $N_{coll}$ are important at this stage because they are related to the number of charged particles ($N_{ch}$) in a given event through the two-component multiplicity model\cite{fialkowski_high_1973}. The $\chi^2$ is minimized between the data and MC Glauber $N_{ch}$ distributions to determine the optimal Glauber parameters. Finally this mapping between $N_{ch}$ and impact parameter is used to classify events by their `percent most central' (see Fig. \ref{fig:centrality}). I conducted the study outlined above for the 2014 \auau data at \snn = 14.5 GeV and produced standardized event classifications for use by the entire STAR collaboration \cite{brandenburg_refmultcorr}.
 
-	\begin{figure}
-		\centering 
-		\begin{subfigure}[b]{\textwidth} 
-			\includegraphics[width=\textwidth]{glauber_mc_event.pdf}
-		\end{subfigure}
-		\begin{subfigure}[b]{\textwidth} 
-			\centering
-			\vspace{-3cm}
-			\includegraphics[width=0.8\textwidth]{cocktail3.pdf} 
-		\end{subfigure}
+	\begin{figure}[ht]
+		\includegraphics[width=\textwidth]{glauber_mc_event.pdf}
+		\caption{  \label{fig:mc_glauber} An example of gold nuclei constructed by sampling 197 nucleon positions from a Woods-Saxson density profile\cite{miller_glauber_2007}. The collision (with impact parameter $b$ = 6 fm) is shown from the transverse plane(left) and along the beam axis (right). Nucleons that participate in the collision are shown in darker red and blue for atom 1 and 2 respectively. }
+	\end{figure}
+	\begin{figure}[ht]
 		\centering
-		\caption{ \label{fig:centrality} An example of the correlation of the experimentally observed $N_{ch}$ and the geometric quantities $b$, $N_{part}$, and collision centrality calculated from MC Glauber\cite{miller_glauber_2007}. The y-axis is in arbitrary units (a.u.). $|\eta| < 1$ corresponds to the geometric acceptance region of the STAR TPC.  } 
-	\end{figure} 
+		\vspace{-3cm}
+		\includegraphics[width=0.8\textwidth]{cocktail3.pdf} 
+		\caption{ \label{fig:centrality} An example of the correlation of the experimentally observed $N_{ch}$ and the geometric quantities $b$, $N_{part}$, and collision centrality calculated from MC Glauber\cite{miller_glauber_2007}. The y-axis is in arbitrary units (a.u.). $|\eta| < 1$ corresponds to the geometric acceptance region of the STAR TPC.  }
+	\end{figure}
+		
 
 	\subsection{Particle Identification}
 	\label{sec:pid}
@@ -75,7 +73,7 @@
 
 	\subsection{Identified Particle Spectra}
 
-	The primary result of the procedure outlined in Section \ref{sec:pid} is the exclusive spectra for the $\pi^+$, $\pi^-$, $p$, and $\bar{p}$. Spectra were computed for several centrality ranges for each particle species in the $-0.25 \leq y \leq 0.25$ range. The spectra shown in Fig. \ref{fig:spectra} are plotted with horizontal bars representative of the \pt range used for measuring each point in the spectra. Vertical bars are used to show statistical uncertainty while shaded boxes are used to show systematic uncertainties, e.g. those resulting from uncertainties in input parameters, the procedure used, etc. The same convention is used for following results in Fig. \ref{fig:rcp} as well. Physical information about the system can be extracted from the spectra by fitting to various model predictions. I plan to compare the fit result of various models in the near future.
+	The primary result of the procedure outlined in Section \ref{sec:pid} is the exclusive spectra for the $\pi^{+/i}$, K$^{+/-}$, $p$, and $\bar{p}$. Spectra were computed for several centrality ranges for each particle species in the $-0.25 \leq y \leq 0.25$ range. The spectra shown in Fig. \ref{fig:spectra} are plotted with horizontal bars representative of the \pt range used for measuring each point in the spectra. Vertical bars are used to show statistical uncertainty while shaded boxes are used to show systematic uncertainties, e.g. those resulting from uncertainties in input parameters, the procedure used, etc. The same convention is used for following results in Fig. \ref{fig:rcp} as well. Physical information about the system can be extracted from the spectra by fitting to various model predictions. I plan to compare the fit result of various models in the near future.
 
 	The spectra are also useful for constructing various other experimental observables. One observable of particular interest will be discussed in the following section.
 
@@ -84,7 +82,7 @@
 		\includegraphics[width=\textwidth]{spectra_all.png} 
 
 		\centering
-		\caption{ \label{fig:spectra} The normalized and corrected exclusive particle yields in the rapidity range $-0.25 \leq y \leq 0.25 $ for positive pions (top left), negative pions (bottom left), protons (top right), and anti-protons (bottom right). The spectra for each centrality is shown in a different color and scaled by successive factors of 10 for viewing purposes. Horizontal bars represent the \pt range used for measuring each point in the spectra. Vertical bars are used to show statistical uncertainty while shaded boxes are used to show systematic uncertainties, ie those resulting from uncertainties in input parameters, the procedure used, etc. } 
+		\caption{ \label{fig:spectra} The normalized and corrected exclusive particle yields in the rapidity range $-0.25 \leq y \leq 0.25 $ for $\pi^{+}$ (top left), $\pi^{-}$ (bottom left), K$^{+}$ (center top), K$^-$ (center bottom), $p$ (top right), and $\bar{p}$ (bottom right). The spectra for each centrality is shown in a different color and scaled by successive factors of 10 for viewing purposes. Horizontal bars represent the \pt range used for measuring each point in the spectra. Vertical bars are used to show statistical uncertainty while shaded boxes are used to show systematic uncertainties, ie those resulting from uncertainties in input parameters, the procedure used, etc. } 
 	\end{sidewaysfigure}
 
 	\subsection{Nuclear Modification Factor}
@@ -102,14 +100,16 @@
 
 	The \rcp has been previously measured at STAR in \auau collisions at \snn=200 GeV. At this energy the \rcp was found to be significantly less than 1.0 for \pt $\gtrsim$4.0 GeV/c \cite{starcollaboration_transversemomentum_2003}. This suppression of particle production at high \pt has been attributed to the loss of energy of particles traveling through and interacting with a strongly interacting medium of quarks and gluons. The purpose of measuring this observable at \snn=14.5 GeV is to determine if this signature, attributed to the formation of QGP at higher \snn energies, turns-off with decreasing \snn energy.
 
-	\begin{sidewaysfigure}[ht]
+	\begin{sidewaysfigure}[p]
 		\centering 
 		\includegraphics[width=\textwidth]{rcp_all.png} 
 
 		\centering
 		\caption{ \label{fig:rcp} The \rcp for \auau at \snn =14.5 GeV for events with a centrality of (C=)0-5\% over those with (P=)60-80\%\cite{brandenburg_identified}. The large (red) error bar on the right hand side of each plot corresponds to the correlated uncertainty due to the MC Glauber calculation of $N_{coll}$ (See Section \ref{sec:mc_glauber}. } 
 	\end{sidewaysfigure}
+	\afterpage{\clearpage}
 
-	The \rcp calculated from the \auau at \snn = 14.5 GeV spectra can be seen in Fig. \ref{fig:rcp} where events with a centrality of 0-5\% and 60-80\% are used for $central$ and $peripheral$ respectively. The \rcp of $p$ and $\bar{p}$ are both significantly above unity for \pt $\gtrsim$ 2.0 GeV/c. The strong suppression of $\bar{p}$ at low \pt can be attributed to the effects baryon stopping at this \snn energy. The \rcp of the $\pi^{+}$ and $\pi^{-}$ is below unity for \pt $\lesssim$ 2.0 GeV/c and consistent with unity above that. There is no conclusive suppression signature observed since the \rcp for all 4 of these species show a value greater than or equal to unity at the highest \pt values. 
 
-	It is important to note that competing effects exist besides energy loss in a medium. However, these other effects are expected to increase the value of \rcp. For this reason an \rcp less than 1.0 is interpreted as a signature of the presence of a QGP-like medium, however, an \rcp greater than or equal to 1.0 does not necessarily suggest that no QGP was formed. Therefore, the \rcp result obtained at \snn=14.5 GeV should be interpreted as evidence that effects of a QGP-like medium are less significant compared to what is observed at higher \snn energies but should not be taken as conclusive evidence that no QGP is formed at this energy.
+	The \rcp calculated from the \auau at \snn = 14.5 GeV spectra can be seen in Fig. \ref{fig:rcp} where events with a centrality of 0-5\% and 60-80\% are used for $central$ and $peripheral$ respectively. The \rcp of K$^+$ and K$^-$ are both significantly above unity for \pt $\gtrsim$ 1.0 GeV/c. Similarly, the \rcp of $p$ and $\bar{p}$ are both significantly above unity for \pt $\gtrsim$ 2.0 GeV/c. The strong suppression of $\bar{p}$ at low \pt can be attributed to the effects of baryon stopping at this \snn energy. The \rcp of $\pi^{+}$ and $\pi^{-}$ are below unity for \pt $\lesssim$ 2.0 GeV/c and consistent with unity above that. There is no conclusive suppression signature observed since the \rcp for all 6 of these species show a value greater than or equal to unity at the highest \pt values. 
+
+	It is important to note that competing effects exist besides energy loss in a medium. However, these other effects are expected to increase the value of \rcp. For this reason an \rcp less than 1.0 is interpreted as a signature of the presence of a QGP-like medium, however, an \rcp greater than or equal to 1.0 does not necessarily suggest that no QGP was formed. Therefore, the \rcp result obtained at \snn=14.5 GeV should be interpreted as evidence that effects of a QGP-like medium are less relevant compared to what is observed at higher \snn energies but should not be taken as conclusive evidence that no QGP is formed at this energy. I recently presented a portion of these results at Quark Matter 2015 on behalf of the STAR collaboration\cite{brandenburg_identified}.

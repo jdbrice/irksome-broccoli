@@ -5,45 +5,45 @@ The style file: auth.bst
 Database file #1: Masters_RPP.bib
 Warning--empty journal in brun_geant3_1987
 Warning--empty journal in schambach_star_2014
-You've used 15 entries,
-            1814 wiz_defined-function locations,
-            547 strings with 17485 characters,
-and the built_in function-call counts, 3505 in all, are:
-= -- 317
-> -- 179
+You've used 16 entries,
+            1854 wiz_defined-function locations,
+            571 strings with 18082 characters,
+and the built_in function-call counts, 3783 in all, are:
+= -- 343
+> -- 187
 < -- 1
-+ -- 84
-- -- 42
-* -- 249
-:= -- 546
-add.period$ -- 43
-call.type$ -- 15
-change.case$ -- 15
++ -- 88
+- -- 44
+* -- 281
+:= -- 587
+add.period$ -- 46
+call.type$ -- 16
+change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 17
-duplicate$ -- 134
-empty$ -- 319
-format.name$ -- 42
-if$ -- 765
+cite$ -- 18
+duplicate$ -- 145
+empty$ -- 349
+format.name$ -- 44
+if$ -- 825
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 13
-newline$ -- 76
-num.names$ -- 15
-pop$ -- 43
+int.to.str$ -- 16
+missing$ -- 14
+newline$ -- 81
+num.names$ -- 16
+pop$ -- 44
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 105
+skip$ -- 111
 stack$ -- 0
-substring$ -- 235
-swap$ -- 22
+substring$ -- 260
+swap$ -- 23
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 36
-width$ -- 17
-write$ -- 156
+while$ -- 39
+width$ -- 18
+write$ -- 167
 (There were 2 warnings)
