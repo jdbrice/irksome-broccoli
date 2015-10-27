@@ -7,5 +7,7 @@
 *.toc
 *.out
 *.png
+*.sublime-workspace
+
 
 figure/
